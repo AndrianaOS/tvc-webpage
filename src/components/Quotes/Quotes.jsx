@@ -32,9 +32,9 @@ export function Quotes() {
   return (
     <div className="quotes-list">
       <section className="quotes-wrapper">
-        {mainQuotes.map((eachQuote) => {
+        {mainQuotes.map((eachQuote, index) => {
           return (
-            <aside className="quotes-container">
+            <aside className="quotes-container" id={`quote${index}`}>
               <h5>{eachQuote.quote}</h5>
               <h6>- {eachQuote.author}</h6>
             </aside>
