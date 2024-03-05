@@ -1,5 +1,9 @@
 function Header() {
-  return <header className="App-header">The Village Consult</header>;
+  return (
+    <header className="App-header">
+      <h1>The Village Consult</h1>
+    </header>
+  );
 }
 
 export default Header;
