@@ -1,18 +1,19 @@
 .quotes-list {
   overflow: hidden;
+  padding: 10px;
 }
 
 .quotes-wrapper {
   display: grid;
   grid-auto-flow: column;
   column-gap: 10px;
-  grid-auto-columns: 18rem;
+  grid-auto-columns: 17.2rem;
   justify-items: stretch;
   animation: scroll 15s linear infinite;
 }
 
 @keyframes scroll {
   to {
-    translate: calc(-3 * 18rem);
+    translate: calc(-3 * 17.2rem);
   }
 }
