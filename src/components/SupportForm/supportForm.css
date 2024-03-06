@@ -1,0 +1,45 @@
+form {
+  padding: 0 20px 15px;
+}
+
+form h3 {
+    text-align: start;
+}
+
+.support-form {
+  width: 100%;
+  text-align: start;
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  padding: 0 0 20px;
+}
+
+.input-fields label {
+  font-weight: bold;
+}
+
+.data_input {
+  padding: 5px;
+  font-size: 14px;
+  border: #969494 1px solid;
+
+}
+
+.submit-btn {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 10px;
+    background: #4B88A2;
+    border: none;
+    color: #faebd7;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: uppercase;
+}
