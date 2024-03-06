@@ -7,12 +7,12 @@ export function About() {
       <p className="about-details">
         These are the quotes that, for me, encapsulate the purpose of social
         work. Being in the sector itself, it is difficult within as well as
-        being on the outside. 
+        being on the outside.
         <br />
         <br />
-        I can liken it to a massive machine with many
-        parts. Its sufficiency is based on the inclusivity of those that make up
-        the community and those that hold these spaces within said machine.
+        I can liken it to a massive machine with many parts. Its sufficiency is
+        based on the inclusivity of those that make up the community and those
+        that hold these spaces within said machine.
         <br />
         <br />
         I am a social worker, I love my role, I enjoy the families I work with
@@ -20,12 +20,17 @@ export function About() {
         <br />
         <br />
         Within this role, I have recognised a massive disconnect between
-        families and social work in understanding our purpose and function 
+        families and social work in understanding our purpose and function
         <br />
         <br />
         The intention of this blog is to bridge that gap – humanising the
         service to strengthen the family through a 1-1 consultation service or
         monthly blog posts.
+      </p>
+      <p>
+        Click <a href="https://cv-portfolio.onrender.com/">here</a> to read our
+        monthly blog posts or fill out the form below for a 1-1 consultation
+        service.
       </p>
     </div>
   );
