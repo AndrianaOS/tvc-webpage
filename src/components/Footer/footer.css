@@ -1,32 +1,70 @@
 footer {
-    background-color: #282c34;
-    color: #f7f4f0;
-    text-align: start;
-    padding: 10px 15px;
+  background-color: #282c34;
+  color: #f7f4f0;
+  text-align: start;
+  padding: 10px 15px;
 }
 
-.links, .links:visited {
-    color: #f7f4f0;
-    text-decoration-color: #ffd700;
+.links,
+.links:visited {
+  color: #f7f4f0;
+  text-decoration-color: #ffd700;
 }
 
-.links:hover, .links:focus {
-    color: #ffd700;
-    font-size: 18px;
-    text-transform: uppercase;
+.links:hover,
+.links:focus {
+  color: #ffd700;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 .footer-info {
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
-    column-gap: 5px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
 }
 
 .icons {
-    width: 30px;
+  width: 30px;
 }
 
 .icons:hover {
-    width: 35px;
+  width: 35px;
+}
+
+#page-name {
+  grid-area: page-name;
+}
+
+#maker {
+  grid-area: maker;
+}
+
+#blog {
+  grid-area: blog;
+}
+
+#insta {
+  grid-area: insta;
+}
+
+@media screen and (min-width: 600px) {
+  footer {
+    display: grid;
+    grid-template-areas:
+      "page-name page-name page-name"
+      "maker blog insta";
+      justify-content: space-between;
+  }
+
+  #page-name {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 720px){
+    footer {
+        padding: 10px 40px;
+    }
 }

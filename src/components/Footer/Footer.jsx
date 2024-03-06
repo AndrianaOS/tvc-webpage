@@ -6,8 +6,8 @@ import love from "../../images/heart.png";
 export function Footer() {
   return (
     <footer>
-      <h3>The Village Consult</h3>
-      <aside className="footer-info">
+      <h3 id="page-name">The Village Consult</h3>
+      <aside className="footer-info" id="maker">
         Made with{" "}
         <span>
           <a href="https://cv-portfolio.onrender.com/">
@@ -23,7 +23,7 @@ export function Footer() {
           Andriana
         </a>
       </aside>
-      <aside className="footer-info">
+      <aside className="footer-info" id="blog">
         <a href="https://tvc312.wordpress.com/">
           <img src={blog} alt="blog" className="icons" />
         </a>{" "}
@@ -32,7 +32,7 @@ export function Footer() {
           Blog
         </a>
       </aside>
-      <aside className="footer-info">
+      <aside className="footer-info" id="insta">
         <a href="https://www.instagram.com/_tvc312/">
           <img src={insta} alt="instagram" className="icons" />
         </a>
