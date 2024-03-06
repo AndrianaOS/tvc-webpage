@@ -18,14 +18,15 @@ export function SupportForm() {
       });
     }
   return (
-    <form action="submit">
+    <form>
       <h3>Contact us for 1-on-1 consultancy services</h3>
       <section className="support-form">
-        <div>
+        <div className="input-fields">
           <label htmlFor="name">Name</label>
           <input
             type="text"
             id="name"
+            className="data_input"
             placeholder="Enter your name"
             name="name"
             value={formDetails.name}
@@ -33,11 +34,12 @@ export function SupportForm() {
             required
           />
         </div>
-        <div>
+        <div className="input-fields">
           <label htmlFor="email">Email</label>
           <input
             type="email"
             id="email"
+            className="data_input"
             placeholder="Enter your email"
             name="email"
             value={formDetails.email}
@@ -45,11 +47,12 @@ export function SupportForm() {
             required
           />
         </div>
-        <div>
+        <div className="input-fields">
           <label htmlFor="message">Your message</label>
           <textarea
             type="textbox"
             id="message"
+            className="data_input"
             placeholder="What would you like support with"
             name="message"
             value={formDetails.message}
@@ -59,7 +62,7 @@ export function SupportForm() {
         </div>
       </section>
 
-      <button type="submit">Send email</button>
+      <button type="submit" className="submit-btn">Send email</button>
     </form>
   );
 }
