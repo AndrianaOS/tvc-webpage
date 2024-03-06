@@ -28,6 +28,32 @@ export function Quotes() {
       quote: "NOBODY IS AN ISLAND",
       author: "Proverb",
     },
+    {
+      quote:
+        "NOBODY CARES HOW MUCH YOU KNOW, UNTIL THEY KNOW HOW MUCH YOU CARE",
+      author: "Theodore Roosevelt",
+    },
+    {
+      quote: "IT TAKES A VILLAGE TO RAISE A CHILD",
+      author: "African Proverb",
+    },
+    {
+      quote: "NOBODY IS AN ISLAND",
+      author: "Proverb",
+    },
+    {
+      quote:
+        "NOBODY CARES HOW MUCH YOU KNOW, UNTIL THEY KNOW HOW MUCH YOU CARE",
+      author: "Theodore Roosevelt",
+    },
+    {
+      quote: "IT TAKES A VILLAGE TO RAISE A CHILD",
+      author: "African Proverb",
+    },
+    {
+      quote: "NOBODY IS AN ISLAND",
+      author: "Proverb",
+    },
   ];
   return (
     <div className="quotes-list">
