@@ -4,7 +4,7 @@
 }
 
 #spacer {
-  height: 10px;
+  height: 30px;
 }
 
 .App-logo {
@@ -19,8 +19,8 @@
 }
 
 .App-header {
-  /* background-color: #282c34; */
-  background-color: #F0F8FF;
+  background-color: #282c34;
+  /* background-color: #F0F8FF; */
   min-height: 20vh;
   display: flex;
   flex-direction: column;
@@ -29,6 +29,7 @@
   font-size: calc(10px + 2vmin);
   /* color: white; */
   text-transform: uppercase;
+  box-shadow: 0px 5px 7px 2px #5A5858;
 }
 
 .tvc {
