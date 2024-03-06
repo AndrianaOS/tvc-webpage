@@ -31,6 +31,34 @@
   text-transform: uppercase;
 }
 
+.tvc {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #E5D5D0 0%,
+    #4B88A2 29%,
+    #FFF9FB 67%,
+    #BB0A21 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  display: inline-block;
+  font-weight: bold;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
 .App-link {
   color: #61dafb;
 }
