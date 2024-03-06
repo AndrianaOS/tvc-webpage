@@ -43,3 +43,24 @@ form h3 {
     font-size: 18px;
     text-transform: uppercase;
 }
+
+#name-info {
+    grid-area: name;
+}
+
+#email-info {
+    grid-area: email;
+}
+
+#message-info {
+    grid-area: message;
+}
+
+@media screen and (min-width: 600px) {
+    .support-form {
+        display: grid;
+        grid-template-areas: "name email"
+        "message message";
+        column-gap: 30px;
+    }
+}

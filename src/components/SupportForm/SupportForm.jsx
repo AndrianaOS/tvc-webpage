@@ -1,27 +1,27 @@
-import { useState } from "react"
-import "./supportForm.css"
+import { useState } from "react";
+import "./supportForm.css";
 
 const formInitialState = {
   name: "",
   email: "",
-  message: ""
+  message: "",
 };
 
 export function SupportForm() {
-    const [formDetails, setFormDetails] = useState(formInitialState);
+  const [formDetails, setFormDetails] = useState(formInitialState);
 
-    function handleInputChange(event) {
-      event.preventDefault();
-      setFormDetails({
-        ...formDetails,
-        [event.target.name]: event.target.value,
-      });
-    }
+  function handleInputChange(event) {
+    event.preventDefault();
+    setFormDetails({
+      ...formDetails,
+      [event.target.name]: event.target.value,
+    });
+  }
   return (
     <form>
       <h3>Contact us for 1-on-1 consultancy services</h3>
       <section className="support-form">
-        <div className="input-fields">
+        <div className="input-fields" id="name-info">
           <label htmlFor="name">Name</label>
           <input
             type="text"
@@ -34,7 +34,7 @@ export function SupportForm() {
             required
           />
         </div>
-        <div className="input-fields">
+        <div className="input-fields" id="email-info">
           <label htmlFor="email">Email</label>
           <input
             type="email"
@@ -47,7 +47,7 @@ export function SupportForm() {
             required
           />
         </div>
-        <div className="input-fields">
+        <div className="input-fields" id="message-info">
           <label htmlFor="message">Your message</label>
           <textarea
             type="textbox"
@@ -62,7 +62,9 @@ export function SupportForm() {
         </div>
       </section>
 
-      <button type="submit" className="submit-btn">Send email</button>
+      <button type="submit" className="submit-btn">
+        Send email
+      </button>
     </form>
   );
 }
