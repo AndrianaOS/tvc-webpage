@@ -1,9 +1,12 @@
 form {
   padding: 0 20px 15px;
+  border: 3px dotted black;
+  margin: 20px auto;
+  width: 80%;
 }
 
 form h3 {
-    text-align: start;
+  text-align: start;
 }
 
 .support-form {
@@ -26,41 +29,41 @@ form h3 {
   padding: 5px;
   font-size: 14px;
   border: #969494 1px solid;
-
 }
 
 .submit-btn {
-    font-size: 15px;
-    font-weight: bold;
-    padding: 5px 10px;
-    background: #4B88A2;
-    border: none;
-    color: #faebd7;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px 10px;
+  background: #4b88a2;
+  border: none;
+  color: #faebd7;
 }
 
 .submit-btn:hover {
-    cursor: pointer;
-    font-size: 18px;
-    text-transform: uppercase;
+  cursor: pointer;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 #name-info {
-    grid-area: name;
+  grid-area: name;
 }
 
 #email-info {
-    grid-area: email;
+  grid-area: email;
 }
 
 #message-info {
-    grid-area: message;
+  grid-area: message;
 }
 
 @media screen and (min-width: 600px) {
-    .support-form {
-        display: grid;
-        grid-template-areas: "name email"
-        "message message";
-        column-gap: 30px;
-    }
+  .support-form {
+    display: grid;
+    grid-template-areas:
+      "name email"
+      "message message";
+    column-gap: 30px;
+  }
 }
