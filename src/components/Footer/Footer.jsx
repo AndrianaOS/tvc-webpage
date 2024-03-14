@@ -10,13 +10,13 @@ export function Footer() {
       <aside className="footer-info" id="maker">
         Made with{" "}
         <span>
-          <a href="https://cv-portfolio.onrender.com/">
+          <a href="https://www.linkedin.com/in/andriana-saffo/">
             <img src={love} alt="heart" className="icons" />
           </a>
         </span>{" "}
         by{" "}
         <a
-          href="https://cv-portfolio.onrender.com/"
+          href="https://www.linkedin.com/in/andriana-saffo/"
           id="maker"
           className="links"
         >
