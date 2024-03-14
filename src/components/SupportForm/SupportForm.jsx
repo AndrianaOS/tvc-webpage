@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import "./supportForm.css";
 import emailjs from "@emailjs/browser";
 
@@ -11,22 +11,32 @@ const formInitialState = {
 export function SupportForm() {
   const [formDetails, setFormDetails] = useState(formInitialState);
 
+  const form = useRef();
+
+  const { REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, REACT_APP_PUBLIC_KEY } =
+    process.env;
+
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-      .sendForm("REACT_APP_SERVICE_ID", "REACT_APP_TEMPLATE_ID", e.target, {
-        publicKey: "REACT_APP_PUBLIC_KEY",
-      })
+      .sendForm(
+        `${REACT_APP_SERVICE_ID}`,
+        `${REACT_APP_TEMPLATE_ID}`,
+        form.current,
+        {
+          publicKey: `${REACT_APP_PUBLIC_KEY}`,
+        }
+      )
       .then(
         () => {
           console.log("SUCCESS!");
+          setFormDetails(formInitialState);
         },
         (error) => {
           console.log("FAILED...", error.text);
         }
       );
-    e.target.reset();
   };
 
   function handleInputChange(event) {
@@ -37,7 +47,7 @@ export function SupportForm() {
     });
   }
   return (
-    <form onSubmit={sendEmail}>
+    <form ref={form} onSubmit={sendEmail}>
       <h3>Contact us for 1-on-1 consultancy services</h3>
       <section className="support-form">
         <div className="input-fields" id="name-info">
