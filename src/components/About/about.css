@@ -8,3 +8,8 @@
 .about {
     text-transform: uppercase;
 }
+
+#blog-link:hover {
+    font-weight: bold;
+    color: #008000;
+}

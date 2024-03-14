@@ -28,7 +28,7 @@ export function About() {
         monthly blog posts.
       </p>
       <p>
-        Click <a href="https://cv-portfolio.onrender.com/">here</a> to read our
+        Click <a href="https://tvc312.wordpress.com/" id="blog-link">here</a> to read our
         monthly blog posts or fill out the form below for a 1-1 consultation
         service.
       </p>
