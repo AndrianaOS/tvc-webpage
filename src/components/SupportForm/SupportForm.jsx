@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./supportForm.css";
+import emailjs from "@emailjs/browser";
 
 const formInitialState = {
   name: "",
@@ -10,22 +11,23 @@ const formInitialState = {
 export function SupportForm() {
   const [formDetails, setFormDetails] = useState(formInitialState);
 
-    const sendEmail = (e) => {
-      e.preventDefault();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-      emailjs
-        .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form.current, {
-          publicKey: "YOUR_PUBLIC_KEY",
-        })
-        .then(
-          () => {
-            console.log("SUCCESS!");
-          },
-          (error) => {
-            console.log("FAILED...", error.text);
-          }
-        );
-    };
+    emailjs
+      .sendForm("REACT_APP_SERVICE_ID", "REACT_APP_TEMPLATE_ID", e.target, {
+        publicKey: "REACT_APP_PUBLIC_KEY",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+    e.target.reset();
+  };
 
   function handleInputChange(event) {
     event.preventDefault();
