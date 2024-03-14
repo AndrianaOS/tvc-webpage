@@ -10,6 +10,23 @@ const formInitialState = {
 export function SupportForm() {
   const [formDetails, setFormDetails] = useState(formInitialState);
 
+    const sendEmail = (e) => {
+      e.preventDefault();
+
+      emailjs
+        .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form.current, {
+          publicKey: "YOUR_PUBLIC_KEY",
+        })
+        .then(
+          () => {
+            console.log("SUCCESS!");
+          },
+          (error) => {
+            console.log("FAILED...", error.text);
+          }
+        );
+    };
+
   function handleInputChange(event) {
     event.preventDefault();
     setFormDetails({
@@ -18,7 +35,7 @@ export function SupportForm() {
     });
   }
   return (
-    <form>
+    <form onSubmit={sendEmail}>
       <h3>Contact us for 1-on-1 consultancy services</h3>
       <section className="support-form">
         <div className="input-fields" id="name-info">
