@@ -60,7 +60,11 @@ export function Quotes() {
       <section className="quotes-wrapper">
         {mainQuotes.map((eachQuote, index) => {
           return (
-            <aside className="quotes-container" id={`quote${index}`}>
+            <aside
+              className="quotes-container"
+              id={`quote${index}`}
+              key={index}
+            >
               <h5>{eachQuote.quote}</h5>
               <h6>- {eachQuote.author}</h6>
             </aside>
