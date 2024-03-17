@@ -1,6 +1,7 @@
 .App {
   text-align: center;
-  color: #1E1D1D;
+  color: #F7F7F7;
+  background: #010B13;
 }
 
 #spacer {
@@ -19,7 +20,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #010B13;
   /* background-color: #F0F8FF; */
   min-height: 20vh;
   display: flex;
@@ -37,9 +38,9 @@
   background-image: linear-gradient(
     -225deg,
     #E5D5D0 0%,
-    #4B88A2 29%,
-    #FFF9FB 67%,
-    #BB0A21 100%
+    #DAC8AE 29%,
+    #CD7F32 67%,
+    #993300 100%
   );
   background-size: auto auto;
   background-clip: border-box;

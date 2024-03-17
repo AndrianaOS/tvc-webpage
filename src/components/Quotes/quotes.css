@@ -1,6 +1,7 @@
 .quotes-list {
   overflow: hidden;
   padding: 10px;
+  color: #010B13;
 }
 
 .quotes-wrapper {
@@ -20,17 +21,16 @@
 
 .quotes-container {
     padding: 0 10px;
-    box-shadow: 0px 4px 2px 0px #5A5858;
 }
 
 #quote0, #quote3, #quote6 {
-    background-color: #F0ECEB;
+    background-color: #E3DAC9;
 }
 
 #quote1, #quote4, #quote7 {
-    background: #EBF0EC;
+    background: #C19A6B;
 }
 
 #quote2, #quote5, #quote8 {
-    background: #FCEBF0;
+    background: #DAC8AE;
 }
