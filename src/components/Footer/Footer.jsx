@@ -1,7 +1,7 @@
 import "./footer.css";
-import blog from "../../images/blogging.png";
-import insta from "../../images/instagram.png";
-import love from "../../images/heart.png";
+import blog from "../../images/blogging.webp";
+import insta from "../../images/instagram.webp";
+import love from "../../images/heart.webp";
 
 export function Footer() {
   return (

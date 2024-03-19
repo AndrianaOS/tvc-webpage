@@ -1,5 +1,5 @@
 import "./hero.css";
-import logo from "../../images/TVC-logo.png";
+import logo from "../../images/TVC-logo.webp";
 
 export function Hero() {
   return (
